@@ -1,0 +1,9 @@
+.center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.center button {
+    width: 500px;
+}
