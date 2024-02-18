@@ -35,21 +35,15 @@
           <a href="from.php"><button type="button" class="btn btn-outline-primary ">Alppy Now</button></a>
         </div>
         <div class="course-col">
-          <h3>M.TECH</h3>
+          <h3>Comming Soon....</h3>
           <p>
-            The M.Tech program is a postgraduate degree that focuses on advanced
-            engineering concepts and specialized knowledge. It enables students
-            to delve deeper into their chosen engineering field and undertake
-            research projects.
+            Comming Soon....
           </p>
         </div>
         <div class="course-col">
-          <h3>RESEARCH</h3>
+          <h3>Very Comming Soon....</h3>
           <p>
-            Our college also offers research opportunities for those driven to
-            advance the boundaries of engineering knowledge. These programs
-            provide a platform for students to engage in high-impact research
-            projects, collaborate with esteemed faculty.
+            Very Comming Soon....
           </p>
         </div>
       </div>

@@ -15,7 +15,7 @@
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      <h1>Computer Basic Detail</h1>
+      <h1 style="color: #fff;" >Computer Basic Course Detail</h1>
     </section>
 
     <section class="container mt-4 me-5" style="margin-left: 380px;">
@@ -52,34 +52,35 @@
 
           <br/><br/><i class="fa-duotone fa-check"></i> Online စာမေးပွဲ ဖြေဆိုလေ့ကျင့်ခြင်း
 
-          <br/><br/><i class="fa-duotone fa-triangle-exclamation"></i> Onlineပုံစံဖြစ်တဲ့အတွက်computerလေးတော့လိုမယ်နော်။ <i class="fa-duotone fa-triangle-exclamation"></i>
+          <br/><br/><i class="fa-duotone fa-triangle-exclamation"></i> Onlineပုံစံဖြစ်တဲ့အတွက် <i class="fa-duotone fa-laptop"></i> computer <i class="fa-duotone fa-laptop"></i>လေးတော့လိုမယ်နော်။ <i class="fa-duotone fa-triangle-exclamation"></i>
 
           <br/><br/><br/><b><h5><i class="fa-regular fa-user-graduate"></i> တက်သင့်သော သူများ။</h5></b>
 
-          <br/><br/>အထက်တန်းကျောင်းသူ/သားများ
+          <br/><br/>အထက်တန်းကျောင်းသူ <i class="fa-duotone fa-slash-forward"></i> သားများ
 
-          <br/><br/>✓ ကွန်ပျူတာ မသုံးဖူးသေးသော သူများ
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> ကွန်ပျူတာ မသုံးဖူးသေးသော သူများ
 
-          <br/><br/>Office Staff အလုပ်လျှောက်ထားမည့်သူများ
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> Office Staff အလုပ်လျှောက်ထားမည့်သူများ
 
-          <br/><br/>/ ကွန်ပျူတာ စိတ်ဝင်စားသူများ
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> ကွန်ပျူတာ စိတ်ဝင်စားသူများ
 
-          <br/><br/>/ ကွန်ပျူတာကို ပြန်လည်၍ လေ့ကျင့်လိုသူများ
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> ကွန်ပျူတာကို ပြန်လည်၍ လေ့ကျင့်လိုသူများ
 
-          <br/><br/>/ လုပ်ငန်းခွင်ဝင်မည့်သူများ
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> လုပ်ငန်းခွင်ဝင်မည့်သူများ
 
-          <br/><br/>ကွန်ပျူတာအခြေခံသင်တန်းများ ကို အသက် မကန့်သတ်ထားပဲ မည်သူမဆိုတက်ရောက် သင်ကြားနိုင်ပါသည်။
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> ကွန်ပျူတာအခြေခံသင်တန်းများ ကို အသက် မကန့်သတ်ထားပဲ မည်သူမဆိုတက်ရောက် သင်ကြားနိုင်ပါသည်။
 
-ပညာအရေးချင်း သပ်မှတ်ထားခြင်းမရှိပဲမည်သူမဆိုလာရောက်တက်လိုရနိုင်ပါသည်။
+          <br/><br/><i class="fa-duotone fa-circle-check"></i> ပညာအရေးချင်း သပ်မှတ်ထားခြင်းမရှိပဲမည်သူမဆိုလာရောက်တက်လိုရနိုင်ပါသည်။
 
-နောက်ပီးကွန်ပျူတာသင်တန်းတက်လိုမကြိုက်ဘူးအဆင်မပြေဘူးဆိုရင်လဲ၃ရက်အတွင်းပိုက်ဆံပြန်ထုပ်ပေးမှာပါနော်။
+          <br/><br/><i class="fa-duotone fa-sack-dollar"></i> နောက်ပီးကွန်ပျူတာသင်တန်းတက်လိုမကြိုက်ဘူးအဆင်မပြေဘူးဆိုရင်လဲ၃ရက်အတွင်းပိုက်ဆံပြန်ထုပ်ပေးမှာပါနော်။
 
-သင်တန်းကြေးလေးကတော့8000လေးထဲပါနော်🤗
+          <br/><br/><i class="fa-duotone fa-sack-dollar"></i> သင်တန်းကြေးလေးကတော့8000လေးထဲပါနော်🤗
 
-Google Meet လေးနဲ့သင်မှာဖြစ်တဲ့အတွက် Broswer or Google Meet app လေးကမရှိမဖြစ်လိုတယ်နော်🫶
+          <br/><br/><img width="35px" src="Images/google-meets.svg" />Google Meet လေးနဲ့သင်မှာဖြစ်တဲ့အတွက် Broswer or Google Meet app လေးကမရှိမဖြစ်လိုတယ်နော်
 
-အကြောင်းအရာပြည့်ပြည်စုံစုံသိလိုပါက <a href="https://www.facebook.com/profile.php?id=61553247316466&mibextid=ZbWKwL" target="_blank"> page messenger </a> ကိုလာရောက်ဖိုလဲဖိတ်ခေါ်ချင်ပါတယ်နော်💗🫶💗<br/><br/></p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <br/><br/><i class="fa-duotone fa-circle-info"></i> အကြောင်းအရာပြည့်ပြည်စုံစုံသိလိုပါက <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.facebook.com/profile.php?id=61553247316466&mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook-messenger"></i> page messenger </a> ကိုလာရောက်ဖိုလဲဖိတ်ခေါ်ချင်ပါတယ်နော်💗🫶💗<br/><br/></p>
+          <a href="from.php" class="btn btn-outline-success ms-3">Alppy Now</a>
+          <a href="courses.php" class="btn btn-outline-danger ms-2">Go Back</a>
         </div>
       </div>
 </div>
