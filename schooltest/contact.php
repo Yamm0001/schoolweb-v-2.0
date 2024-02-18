@@ -16,43 +16,46 @@
     <!-- ---------------------contact us-------------------- -->
 
     <section class="location">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12331.12186528447!2d-77.02266799253854!3d38.89836981078218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sin!4v1692512872290!5m2!1sen!2sin"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30556.991926663017!2d96.19400449217262!3d16.795372671341223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed3fdbe25a8d%3A0xd6e831efad57e0af!2sThaketa%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1708276823453!5m2!1sen!2smm" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section class="contact-us">
       <div class="row">
         <div class="contact-col">
           <div>
-            <i class="fa fa-home"></i>
+            <i class="fa fa-map-location"></i>
             <span>
-              <h5>Mecheda, DCU Building</h5>
-              <p>Washington, DC, USA</p>
+              <h5>Myanmar , Yangon</h5>
             </span>
           </div>
 
           <div>
             <i class="fa fa-phone"></i>
             <span>
-              <h5>+1 8491817532</h5>
-              <p>call us for queries</p>
+              <h5>+959 262 731 518</h5>
             </span>
           </div>
 
           <div>
-            <i class="fa fa-envelope-o"></i>
+            <i class="fa fa-envelope"></i>
             <span>
-              <h5>dcuofficial@gmail.com</h5>
-              <p>Email us for queries</p>
+              <h5>support@technologylearn.cloud</h5>
             </span>
           </div>
+
+          <div>
+            <i class="fa fa-globe"></i>
+            <span>
+              <h5>www.technologylearn.cloud</h5>
+            </span>
+          </div>
+
         </div>
 
         <div class="contact-col" >
