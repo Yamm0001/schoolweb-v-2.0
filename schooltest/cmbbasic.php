@@ -18,17 +18,18 @@
       <h1 style="color: #fff;" >Computer Basic Course Detail</h1>
     </section>
 
-    <section class="container mt-4 me-5" style="margin-left: 380px;">
-    <div class="card" style="max-width: 800px;">
+    <section class="container-fluid mt-4 me-5">
+    <div class="card" style="max-width: 100%;">
         <img src="Images/cmb1.png" class="card-img-top" alt="...">
+        <div class="detail-shadow">
         <div class="card-body">
-          <h3 class="card-title mb-5" style="margin-left: 10px;">Computer Basic Course</h3>
+          <h3 class="card-title mb-5 mt-3" style="margin-left: 10px;">Computer Basic Course</h3>
           <ul class="list-unstyled mb-1-9 pfont">
-            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Teacher:</span> Aung Myat Thu</li>
-            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">သင်တန်းကာလ:</span> 1.5 Months</li>
-            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Mail:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-secondary-emphasis" href="mailto:support@technologylearn.cloud" target="_blank">support@technologylearn.cloud</a></li>
-            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Website:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://technologylearn.cloud" target="_blank">https://technologylearn.cloud</a></li>
-            <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">Phone:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-secondary-emphasis" href="tel:09262731518" target="_blank">959 262 731 518</a></li>
+            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><i class="fa-duotone fa-chalkboard-user"></i> Teacher:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-secondary-emphasis" href="https://t.me/amt262" target="_blank"> Aung Myat Thu</a> , <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-secondary-emphasis" href="https://t.me/no_fear56" target="_blank">Phone Htut Khaung</a> </li>
+            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><i class="fa-duotone fa-calendar"></i> သင်တန်းကာလ:</span> 1.5 Months</li>
+            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><i class="fa-duotone fa-envelope"></i> Mail:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-secondary-emphasis" href="mailto:support@technologylearn.cloud" target="_blank">support@technologylearn.cloud</a></li>
+            <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600"><i class="fa-duotone fa-globe-pointer"></i> Website:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://technologylearn.cloud" target="_blank">https://technologylearn.cloud</a></li>
+            <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600"><i class="fa-duotone fa-phone-volume" style="margin-right: 5px;"></i> Phone:</span> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-secondary-emphasis" href="tel:09262731518" target="_blank">959 262 731 518</a></li>
           </ul>
           <br/><p class="card-text pfont"><b><h5>ကွန်ပျူတာအခြေခံ ဘာသာရပ်တွင် သင်ယူရမည့် အကြောင်းအရာများ။</h5></b>
 
@@ -56,7 +57,7 @@
 
           <br/><br/><br/><b><h5><i class="fa-regular fa-user-graduate"></i> တက်သင့်သော သူများ။</h5></b>
 
-          <br/><br/>အထက်တန်းကျောင်းသူ <i class="fa-duotone fa-slash-forward"></i> သားများ
+          <br/>အထက်တန်းကျောင်းသူ <i class="fa-duotone fa-slash-forward"></i> သားများ
 
           <br/><br/><i class="fa-duotone fa-circle-check"></i> ကွန်ပျူတာ မသုံးဖူးသေးသော သူများ
 
@@ -79,9 +80,10 @@
           <br/><br/><img width="35px" src="Images/google-meets.svg" />Google Meet လေးနဲ့သင်မှာဖြစ်တဲ့အတွက် Broswer or Google Meet app လေးကမရှိမဖြစ်လိုတယ်နော်
 
           <br/><br/><i class="fa-duotone fa-circle-info"></i> အကြောင်းအရာပြည့်ပြည်စုံစုံသိလိုပါက <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.facebook.com/profile.php?id=61553247316466&mibextid=ZbWKwL" target="_blank"> <i class="fa-brands fa-facebook-messenger"></i> page messenger </a> ကိုလာရောက်ဖိုလဲဖိတ်ခေါ်ချင်ပါတယ်နော်💗🫶💗<br/><br/></p>
-          <a href="from.php" class="btn btn-outline-success ms-3">Alppy Now</a>
-          <a href="courses.php" class="btn btn-outline-danger ms-2">Go Back</a>
+          <a href="from.php" class="btn btn-outline-success ms-5 rounded-pill col col-lg-3">Alppy Now</a>
+          <a href="courses.php" class="btn btn-outline-danger ms-2 rounded-pill col col-lg-3">Go Back</a>
         </div>
       </div>
+    </div>  
 </div>
 </section>

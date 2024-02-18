@@ -23,7 +23,7 @@
           technology and equip you with the skills to shape the future.
         </p>
       </div>
-      <div class="row">
+      <div class="row mt-5">
         <div class="course-col">
           <h3>Computer Basic Course</h3>
           <p>
@@ -52,40 +52,37 @@
     <!-- --------------facilities---------------- -->
 
     <section class="facilities">
-      <h1>Our Facilities</h1>
+      <h1>Our Course Teaching</h1>
       <div class="facilities-intro">
         <p>
           The DCU campus is equipped with state-of-the-art facilities and
           resources to support the learning and research needs of our students.
         </p>
       </div>
-      <div class="row">
+      <div class="row mt-5">
         <div class="facilities-col">
-          <img src="Images/facilities1.jpg" alt="" />
-          <h3>World Class Library</h3>
+          <img src="...." alt="teaching_photo network error" />
+          <h3>Teaching Photo</h3>
           <p>
-            Our library is one of the largest and most comprehensive in the
-            country.
-          </p>
-        </div>
-        <div class="facilities-col">
-          <img src="Images/facilities2.jpg" alt="" />
-          <h3>Largest Playground</h3>
-          <p>
-            The campus has a large and well-maintained playground for students
-            to enjoy.
+            Our Teaching
           </p>
         </div>
 
         <div class="facilities-col">
-          <img src="Images/facilities3.jpg" alt="" />
-          <h3>Tasty and Healthy Food</h3>
+          <img src="...." alt="teaching_photo network error" />
+          <h3>Teaching Photo</h3>
           <p>
-            The campus has a well-equipped cafeteria that serves a variety of
-            nutritious and delicious meals.
+            Our Teaching
           </p>
         </div>
-      </div>
+
+        <div class="facilities-col">
+          <img src="...." alt="teaching_photo network error" />
+          <h3>Teaching Photo</h3>
+          <p>
+            Our Teaching
+          </p>
+        </div>
     </section>
 
     <!-- ----------footer---------------- -->
