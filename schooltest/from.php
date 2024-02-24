@@ -1,4 +1,37 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $phone_number = $_POST["phone_number"];
+    $birth_date = $_POST["birth_date"];
+    $age = $_POST["age"];
+    $gender = $_POST["gender"];
+    $os_version = $_POST["os_version"];
+    $start_date = date("Y-m-d H:i:s");
+    $ip_address = $_SERVER['REMOTE_ADDR'];
+
+    // Insert a new record into the database
+    // You'll need to replace 'your_database_name' with the actual name of your database
+    $conn = new mysqli("localhost", "root", "", "form");
+    $stmt = $conn->prepare("INSERT IGNORE INTO users (name, email, phone_number, birth_date, age, gender, os_version, start_date, ip_address) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssissss", $name, $email, $phone_number, $birth_date, $age, $gender, $os_version, $start_date, $ip_address);
+    $stmt->execute();
+
+    if ($stmt->affected_rows > 0) {
+        // Redirect to the submit page if a new record was inserted
+        header("Location: success.php");
+        exit();
+    } else {
+        // Display an error message if the record already exists
+        $error = '<div class="alert alert-danger"role="alert"><i class="fa-duotone fa-circle-exclamation"></i>
+        Email or Phone Number Already Exit!
+      </div>';
+    }
+}
+?>
+
 <?php include('header.php') ?>
+
 <body>
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
@@ -18,9 +51,12 @@
     <h2 style="text-align: center;">Registration Form</h2>
     <div class="center">
 
-    <form action="./dbconnection/connect.php" method="POST">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-      <input type="hidden" id="sd" name="sd" />
+    <input type="hidden" name="start_date" value="<?php echo date("Y-m-d H:i:s"); ?>">
+    <input type="hidden" name="ip_address" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
+
+    <?php if (isset($error)) { echo $error; } ?>
 
       <div class="form-floating mb-3">
         <input style="width: 500px" type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
@@ -31,11 +67,11 @@
         <label for="email">Email</label>
       </div>
       <div class="form-floating mb-3">
-        <input style="width: 500px;" type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <input style="width: 500px;" type="text" class="form-control" id="phone" name="phone_number" placeholder="Enter your phone number" required>
         <label for="phone">Phone Number</label>
       </div>
       <div class="form-floating mb-3">
-        <input style="width: 500px;" type="date" class="form-control" id="bd" name="bd" required>
+        <input style="width: 500px;" type="date" class="form-control" id="bd" name="birth_date" required>
         <label for="dob">Date of Birth</label>
       </div>
       <div class="form-floating mb-3">
@@ -45,15 +81,15 @@
       <div class="form-floating mb-3">
         <select style="width: 500px;" class="form-control" id="gender" name="gender" required>
           <option value="" selected disabled>--Select--</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
           <option value="nfs">Not For Say</option>
         </select>
         <label for="gender">Gender:</label>
       </div>
       <div class="form-floating mb-3">
-        <select style="width: 500px;" class="form-control" id="osVersion" name="osVersion" required>
+        <select style="width: 500px;" class="form-control" id="osVersion" name="os_version" required>
           <option value="" selected disabled>--Select--</option>
           <option value="windows11">Windows 11</option>
           <option value="windows10">Windows 10</option>
