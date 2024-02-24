@@ -45,7 +45,7 @@
       </div>
         <h1>Success</h1> 
         <p>Thanks For Submitted<br/> If your payment is successful, come to the <a href="https://www.facebook.com/profile.php?id=61553247316466&mibextid=ZbWKwL" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank">facebook page</a></p>
-        <button type="button" class="btn btn-outline-info mt-3 ">Back To Website</button>
+        <a href="index.php" class="btn btn-outline-info mt-3">Back To Website</a>
       </div>
     </body>
 </html>
