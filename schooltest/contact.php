@@ -1,3 +1,32 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
+    $start_date = date("Y-m-d H:i:s");
+    $ip_address = $_SERVER['REMOTE_ADDR'];
+
+    // Insert a new record into the database
+    // You'll need to replace 'your_database_name' with the actual name of your database
+    $conn = new mysqli("localhost", "root", "", "form");
+    $stmt = $conn->prepare("INSERT IGNORE INTO feedback (name, email, subject, message, date, ip_address) VALUES (?,?,?,?,?,?)");
+    $stmt->bind_param("ssssss", $name, $email, $subject, $message, $start_date, $ip_address);
+    $stmt->execute();
+
+    if ($stmt->affected_rows > 0) {
+        // Redirect to the submit page if a new record was inserted
+        header("Location: successfeedback.php");
+        exit();
+    } else {
+        // Display an error message if the record already exists
+        $error = '<div class="alert alert-danger"role="alert"><i class="fa-duotone fa-circle-exclamation"></i>
+        Not Form Submitted!
+      </div>';
+    }
+}
+?>
+
 <?php include('header.php')?>
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
@@ -59,7 +88,9 @@
         </div>
 
         <div class="contact-col" >
-          <form id="contact-form" action="form_handler.php" method="post">
+          <form id="contact-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+              <input type="hidden" name="date" value="<?php echo date("Y-m-d H:i:s"); ?>">
+              <input type="hidden" name="ip_address" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
               <input type="text" name="name" placeholder="Enter your name" required/>
               <input type="email" name="email" placeholder="Enter your email" required/>
               <input type="text" name="subject" placeholder="Enter your subject" required/>
@@ -68,7 +99,7 @@
           </form>
       </div>
       
-      <script>
+      <!-- <script>
       document.getElementById('contact-form').addEventListener('submit', function(event) {
           event.preventDefault();
       
@@ -90,7 +121,7 @@
           };
           xhr.send(formData);
       });
-      </script>
+      </script> -->
       
     </section>
     <!-- ----------footer---------------- -->

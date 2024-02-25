@@ -1,36 +1,43 @@
-<?php include("header.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-<link rel="stylesheet" href="assets/css/dash.css">
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+.welcome-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
+.welcome-container h1 {
+    color: #333;
+}
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css">
-<div class="container bootstrap snippet">
-  <div class="row">
-    <div class="col-lg-2 col-sm-10">
-      <div class="circle-tile ">
-        <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa-duotone fa-user-graduate fa-fw fa-3x" style="margin-top: 10px;"></i></div></a>
-        <div class="circle-tile-content dark-blue">
-          <div class="circle-tile-description text-faded"> Students List</div>
-          <div class="circle-tile-number text-faded "><?php include 'stdcount.php'; ?></div>
-          <a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
-        </div>
-      </div>
+.welcome-container p {
+    color: #666;
+}
+
+    </style>
+</head>
+<?php include('header.php'); ?>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Admin Dashboard Page</h1>
+        <a href="login.php" type="button" class="btn btn-outline-success">Login Now </a>  
     </div>
-     
-    <div class="col-lg-2 col-sm-10">
-      <div class="circle-tile ">
-        <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
-        <div class="circle-tile-content red">
-          <div class="circle-tile-description text-faded"> Users Online </div>
-          <div class="circle-tile-number text-faded ">10</div>
-          <a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
-        </div>
-      </div>
-    </div> 
-  </div> 
-</div>  
-  
-</div>
-</div>
+</body>
+</html>

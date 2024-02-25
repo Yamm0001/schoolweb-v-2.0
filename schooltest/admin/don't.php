@@ -1,3 +1,32 @@
+<!-- <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["first_name"];
+    $email = $_POST["last_name"];
+    $phone_number = $_POST["display_name"];
+    $birth_date = $_POST["email"];
+    $age = $_POST["password"];
+    $start_date = date("Y-m-d H:i:s");
+
+    // Insert a new record into the database
+    // You'll need to replace 'your_database_name' with the actual name of your database
+    $conn = new mysqli("localhost", "root", "", "form");
+    $stmt = $conn->prepare("INSERT IGNORE INTO users (first_name, last)name, display_name, email, password, gender, os_version, start_date, ip_address) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssissss", $name, $email, $phone_number, $birth_date, $age, $gender, $os_version, $start_date, $ip_address);
+    $stmt->execute();
+
+    if ($stmt->affected_rows > 0) {
+        // Redirect to the submit page if a new record was inserted
+        header("Location: success.php");
+        exit();
+    } else {
+        // Display an error message if the record already exists
+        $error = '<div class="alert alert-danger"role="alert"><i class="fa-duotone fa-circle-exclamation"></i>
+        Email or Phone Number Already Exit!
+      </div>';
+    }
+}
+?>
+
 <?php
 include_once "header.php";
 ?>
@@ -104,4 +133,4 @@ include_once "header.php";
 </script>
 <?php
 include_once "footer.php";
-?>
+?> -->

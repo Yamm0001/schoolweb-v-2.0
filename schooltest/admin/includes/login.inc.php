@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		redirect("admin.php");
 		exit;
 	} else {
-		set_message('<div class="alert alert-warning" role="alert" col-md-12"><p>Incorrect username or password.</p></div>');
+		set_message('<div class="alert alert-warning" role="alert" col-md-12"><p>Access Denied Username or Password Incorrect.</p></div>');
 	}
 }
 ?>

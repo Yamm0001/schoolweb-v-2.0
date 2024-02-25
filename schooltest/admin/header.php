@@ -11,6 +11,7 @@ include_once "includes/init.php";
 	<script src="assets/js/jquery-1.10.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css">
 </head>
 <body>
 	<div class="container">
@@ -27,13 +28,13 @@ include_once "includes/init.php";
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="index.php">Home</a></li>
 						
 						<?php if(!logged_in()) : ?>
-							<li><a href="login.php">Login</a></li>
+							<li><a href="login.php">login</a></li>
 						<?php else : ?>
+							<li><a href="dashboard.php">Dashboard</a></li>
 							<li><a href="admin.php">Admin List</a></li>
-							<li><a href="#!">Feedback List</a></li>
+							<li><a href="feedback.php">Feedback List</a></li>
 							<li><a href="students.php">Students List</a></li>
 							<li><a href="logout.php">Logout</a></li>
 						<?php endif; ?>
