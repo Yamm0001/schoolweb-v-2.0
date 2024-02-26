@@ -64,4 +64,5 @@ $result = $conn->query($sql);
         return confirm("Are you sure you want to delete this student?");
         }
     </script>
+    <?php include("footer.php") ?>
 </html>

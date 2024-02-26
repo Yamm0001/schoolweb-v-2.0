@@ -69,7 +69,7 @@
         <div class="course-col">
           <h3>Phone Htut Khaung</h3>
           <p>
-            Developer , Server Admin , Founder
+            Back-end Developer , Server Admin , Founder
           </p>
         </div>
         <div class="course-col">
@@ -82,6 +82,24 @@
           <h3>Hein Htut Thar</h3>
           <p>
             Page Admin , Logo Maker
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Arkar Hein</h3>
+          <p>
+            Front-end Developer
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Zwe Lin Aung</h3>
+          <p>
+            Page Admin , Contact Creator , Digital Marketing 
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Si Thu Paing Soe</h3>
+          <p>
+            Front-end Developer
           </p>
         </div>
       </div>
