@@ -31,6 +31,7 @@ $result = $conn->query($sql);
                     <th scope="col">Gender</th>
                     <th scope="col">OS Version</th>
                     <th scope="col">IP Address</th>
+                    <th scope="col">Current Device</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -48,6 +49,7 @@ $result = $conn->query($sql);
                     <td>".$row["gender"]."</td>
                     <td>".$row["os_version"]."</td>
                     <td>".$row["ip_address"]."</td>
+                    <td>".$row["device"]."</td>
                     <td><form method='post' onsubmit='return confirmDelete()'><button type='submit' name='delete_user' value='" . $row["id"] . "'>Delete</button></form></td>
                 </tr>";
                 }

@@ -3,7 +3,7 @@ include_once "header.php";
 include_once "includes/login.inc.php";
 
 if(logged_in()) {
-    redirect("dashboard.php.php");
+    redirect("dashboard.php");
 }
 ?>
 <div class="container">

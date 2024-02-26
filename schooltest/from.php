@@ -9,12 +9,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $os_version = $_POST["os_version"];
     $start_date = date("Y-m-d H:i:s");
     $ip_address = $_SERVER['REMOTE_ADDR'];
+    $device = $_POST['device'];
 
     // Insert a new record into the database
     // You'll need to replace 'your_database_name' with the actual name of your database
     $conn = new mysqli("localhost", "root", "", "form");
-    $stmt = $conn->prepare("INSERT IGNORE INTO users (name, email, phone_number, birth_date, age, gender, os_version, start_date, ip_address) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssissss", $name, $email, $phone_number, $birth_date, $age, $gender, $os_version, $start_date, $ip_address);
+    $stmt = $conn->prepare("INSERT IGNORE INTO users (name, email, phone_number, birth_date, age, gender, os_version, start_date, ip_address, device) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssisssss", $name, $email, $phone_number, $birth_date, $age, $gender, $os_version, $start_date, $ip_address, $device);
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
@@ -51,35 +52,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h2 style="text-align: center;">Registration Form</h2>
     <div class="center">
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="container-md">
 
     <input type="hidden" name="start_date" value="<?php echo date("Y-m-d H:i:s"); ?>">
     <input type="hidden" name="ip_address" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
+    <input type="hidden" name="device" value="<?php echo $_SERVER['HTTP_USER_AGENT']; ?>">
 
     <?php if (isset($error)) { echo $error; } ?>
 
       <div class="form-floating mb-3">
-        <input style="width: 500px" type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
         <label for="name">Name</label>
       </div>
       <div class="form-floating mb-3">
-        <input style="width: 500px;" type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
         <label for="email">Email</label>
       </div>
       <div class="form-floating mb-3">
-        <input style="width: 500px;" type="text" class="form-control" id="phone" name="phone_number" placeholder="Enter your phone number" required>
+        <input type="text" class="form-control" id="phone" name="phone_number" placeholder="Enter your phone number" required>
         <label for="phone">Phone Number</label>
       </div>
       <div class="form-floating mb-3">
-        <input style="width: 500px;" type="date" class="form-control" id="bd" name="birth_date" required>
+        <input type="date" class="form-control" id="bd" name="birth_date" required>
         <label for="dob">Date of Birth</label>
       </div>
       <div class="form-floating mb-3">
-        <input style="width: 500px;" type="number" class="form-control" id="age" name="age" placeholder="Enter your age" required>
+        <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age" required>
         <label for="age">Age</label>
       </div>
       <div class="form-floating mb-3">
-        <select style="width: 500px;" class="form-control" id="gender" name="gender" required>
+        <select class="form-control" id="gender" name="gender" required>
           <option value="" selected disabled>--Select--</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
@@ -89,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="gender">Gender:</label>
       </div>
       <div class="form-floating mb-3">
-        <select style="width: 500px;" class="form-control" id="osVersion" name="os_version" required>
+        <select class="form-control" id="osVersion" name="os_version" required>
           <option value="" selected disabled>--Select--</option>
           <option value="windows11">Windows 11</option>
           <option value="windows10">Windows 10</option>
@@ -99,8 +101,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </select>
         <label for="gender">Operating System</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button style="width: 100%;" type="submit" class="btn btn-primary">Submit</button>
     </form>
+</div>
     </div>
   </div>
 
