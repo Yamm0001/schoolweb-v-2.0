@@ -75,7 +75,7 @@
         <div class="course-col">
           <h3>Aung Myat Thu</h3>
           <p>
-            Developer , Main Teacher
+            Developer , Main Teacher , Assistant Server Admin
           </p>
         </div>
         <div class="course-col">
@@ -87,7 +87,7 @@
         <div class="course-col">
           <h3>Arkar Hein</h3>
           <p>
-            Front-end Developer
+            Front-end Developer , Assistant Server Admin
           </p>
         </div>
         <div class="course-col">

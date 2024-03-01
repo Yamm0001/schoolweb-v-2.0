@@ -12,7 +12,7 @@
         <a href="https://www.instagram.com/ranit_manik_/" style="margin-right: 20px;"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/ranit-manik/"><i class="fa-brands fa-github"></i></a>
       </div>
-      <p>Developed By <i class="fa-solid fa-brackets-curly"></i> Phone Htut Khaung &#38; Aung Myat Thu</p>
+      <p>Developed By <i class="fad fa-brackets-curly"></i> Phone Htut Khaung &#38; Aung Myat Thu</p>
       <p style="margin-bottom: 0;">Copyright <i class="fa-duotone fa-copyright"></i> TLTC 2024 All Right Reseved.</p>
       <p class="fw-lighter text-md-end mt-2 me-3"><i class="fa-duotone fa-v"></i> 2.0</p>
     </section>

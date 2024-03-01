@@ -2,10 +2,10 @@
 
 1. from.php
 2. contect.php
-3. includes/db.php
 4. feedbackcount.php
 5. stdcount.php
 6. mbcount.php
+7. adminpanel/Admin_config/connection.php
 
 ##Database inert to 
 

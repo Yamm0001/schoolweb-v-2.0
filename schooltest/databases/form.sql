@@ -97,6 +97,47 @@ CREATE TABLE `users` (
   `ip_address` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `tb_admin` (
+  `sr_Id` int(10) NOT NULL,
+  `adm_Id` varchar(55) NOT NULL,
+  `adm_name` varchar(100) NOT NULL,
+  `adm_username` varchar(55) NOT NULL,
+  `adm_password` varchar(55) NOT NULL,
+  `adm_status` varchar(10) NOT NULL DEFAULT 'Inactive',
+  `adm_type` varchar(10) NOT NULL DEFAULT 'Normal'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_admin`
+--
+
+INSERT INTO `tb_admin` (`sr_Id`, `adm_Id`, `adm_name`, `adm_username`, `adm_password`, `adm_status`, `adm_type`) VALUES
+(1, 'adm_1', 'Admin', 'admin@admin.com', '202cb962ac59075b964b07152d234b70', 'Active', 'Super');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tb_admin`
+--
+ALTER TABLE `tb_admin`
+  ADD PRIMARY KEY (`sr_Id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_admin`
+--
+ALTER TABLE `tb_admin`
+  MODIFY `sr_Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
 --
 -- Indexes for dumped tables
 --

@@ -6,7 +6,7 @@
             <li><a href="courses.php">COURSES</a></li>
             <li><a href="blog.php">CHAT BOT</a></li>
             <li><a href="contact.php">CONTACT</a></li>
-            <li><a href="admin">Admin Login</a></li>
+            <li><a href="admin/admin-panel/views/">Admin Login</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>

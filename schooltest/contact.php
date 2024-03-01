@@ -1,4 +1,5 @@
 <?php
+include('header.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
@@ -26,8 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
-<?php include('header.php')?>
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.php">HOME</a></li>
@@ -126,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
     <!-- ----------footer---------------- -->
 
-    <?php require include('footer.php')?>
+    <?php include('footer.php')?>
 
     <!--Javascript for Toggle Menu-->
     <script>
